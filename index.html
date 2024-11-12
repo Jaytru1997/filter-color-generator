@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Color Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <fieldset>
+            <p>
+                <label>Target color</label> <input class="target" type="text" placeholder="target hex"
+                    value="#00a4d6" />
+            </p>
+            <button class="execute">Compute Filters</button>
+        </fieldset>
+        <p>Real pixel, color applied through CSS <code>background-color</code>:</p>
+        <div class="pixel realPixel"></div>
+
+        <p>Filtered pixel, color applied through CSS <code>filter</code>:</p>
+        <div class="pixel filterPixel"></div>
+
+        <p class="filterDetail"></p>
+        <p class="lossDetail"></p>
+    </div>
+
+</body>
+<script src="filter.js"></script>
+
+</html>
